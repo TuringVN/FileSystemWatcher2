@@ -83,7 +83,7 @@ namespace FileChangeNotifier
             m_Sb.Append(Environment.NewLine);
             m_bDirty = true;
 
-            FileStream f = new FileStream("F:\\test.txt", FileMode.Append);
+            FileStream f = new FileStream("F:\\test.txt  xxx", FileMode.Append);
             f.Write(encoding.GetBytes(m_Sb.ToString()), 0, m_Sb.ToString().Length);
             f.Close();
         }
